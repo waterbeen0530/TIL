@@ -196,6 +196,24 @@ printf("%d ", sum);
 //형성평가4
 
 /*{
+	int a[4][3];
+	int sum = 0;
+	int i = 0, j = 0;
+	for (i = 0; i < 4; i++) {
+		printf("%dclass? ", i + 1);
+		scanf("%d %d %d", &a[i][0], &a[i][1], &a[i][2]);
+	}
+	for (i = 0; i < 4; i++) {
+		sum = 0;
+		for (j = 0; j < 3; j++) {
+			sum += a[i][j];
+		}
+		printf("%dclass : %d\n", i+1, sum);
+	}
+}*/
+//형성평가5
+
+/*{
 int a[6][6] = { {0,1,0,1,0,1}, 0 };
 
 int i, j;
@@ -212,3 +230,84 @@ for (i = 0; i < 5; i++) {
 }
 }*/
 //형성평가6
+
+/*{
+int a[2][3];
+int b[2][3];
+int i = 0, j = 0;
+printf("first array\n");
+for (i = 0; i < 2; i++) {
+	for (j = 0; j < 3; j++) {
+		scanf("%d", &a[i][j]);
+	}
+}
+printf("second array\n");
+for (i = 0; i < 2; i++) {
+	for (j = 0; j < 3; j++) {
+		scanf("%d", &b[i][j]);
+	}
+}
+for (i = 0; i < 2; i++) {
+	for (j = 0; j < 3; j++) {
+		printf("%d ", a[i][j] * b[i][j]);
+	}
+	printf("\n");
+}
+}*/
+//형성평가7
+
+/*{
+int a[4][2];
+int i = 0, j = 0;
+int sum = 0;
+for (i = 0; i < 4; i++) {
+	for (j = 0; j < 2; j++) {
+		scanf("%d", &a[i][j]);
+	}
+}
+for (i = 0; i < 4; i++) {
+	sum = 0; {
+		for (j = 0; j < 2; j++) {
+			sum += a[i][j];
+		}
+		printf("%d ", sum / 2);
+	}
+}
+printf("\n");
+for (i = 0; i < 2; i++) {
+	sum = 0; {
+		for (j = 0; j < 4; j++) {
+			sum += a[j][i];
+		}
+		printf("%d ", sum / 4);
+	}
+}
+
+printf("\n");
+sum = 0;
+for (i = 0; i < 4; i++) {
+	for (j = 0; j < 2; j++) {
+		sum += a[i][j];
+	}
+}
+printf("%d", sum / 8);
+}*/
+//형성평가8
+
+/*{
+char a[3][5];
+
+int i = 0, j = 0 ;
+for (i = 0; i < 3; i++) {
+	for (j = 0; j < 5; j++) {
+		scanf(" %c", &a[i][j]);
+	}
+}
+for (i = 0; i < 3; i++) {
+	for (j = 0; j < 5; j++) {
+		printf("%c ", a[i][j] + 32);
+	}
+	printf("\n");
+}
+}*/
+// 형성평가A
